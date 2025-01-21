@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="test_box">
+    <link name="chassic">
+        <pose relative_to="__model__">0 0 0 0 0 0</pose>
+        <collision name="collision">
+            <geometry>
+                <box>
+                    <size>2 2 2</size>
+                </box>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <box>
+                    <size>2 2 2</size>
+                </box>
+            </geometry>
+        </visual>
+        <inertial>
+            <mass value="1.0" />
+            <inertia ixx="0.2083" ixy="0.0" ixz="0.0" iyy="0.2083" iyz="0.0" izz="0.3333"/>
+        </inertial>
+    </link>
+
+    <gazebo reference="chassic">
+        <!-- <gravityEnabled>0</gravityEnabled> -->
+    </gazebo>
+</robot>

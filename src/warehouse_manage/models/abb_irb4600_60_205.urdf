@@ -5,6 +5,7 @@
 <!-- =================================================================================== -->
 <robot name="abb_irb4600_60_205">
   <!-- link list -->
+  
   <link name="base_link">
     <collision name="collision">
       <geometry>
@@ -208,74 +209,92 @@
     <child link="tool0"/>
   </joint>
 
-  <ros2_control name="GazeboSimSystem" type="system">
+  <!-- <ros2_control name="GazeboSimSystem" type="system">
     <hardware>
       <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware> -->
+  <ros2_control name="IgnitionSystem" type="system">
+    <hardware>
+      <plugin>ign_ros2_control/IgnitionSystem</plugin>
     </hardware>
     <!-- Revolute joints -->
     <joint name="joint_1">
-      <command_interface name="position" />
-      <state_interface name="position"/>
+      <command_interface name="position">
+        <param name="min">-15</param>
+        <param name="max">15</param>
+      </command_interface>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param> 
+      </state_interface>
       <state_interface name="velocity"/>
     </joint>
     <joint name="joint_2">
       <command_interface name="position" />
-      <state_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param> 
+      </state_interface>
       <state_interface name="velocity"/>
     </joint>
     <joint name="joint_3">
       <command_interface name="position" />
-      <state_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param> 
+      </state_interface>
       <state_interface name="velocity"/>
     </joint>
     <joint name="joint_4">
       <command_interface name="position" />
-      <state_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param> 
+      </state_interface>
       <state_interface name="velocity"/>
     </joint>
     <joint name="joint_5">
       <command_interface name="position" />
-      <state_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param> 
+      </state_interface>
       <state_interface name="velocity"/>
     </joint>
     <joint name="joint_6">
       <command_interface name="position" />
-      <state_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param> 
+      </state_interface>
       <state_interface name="velocity"/>
     </joint>
   </ros2_control>
 
-  <gazebo>
-    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-      <parameters>/home/yjy/robo_ws/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
+  <gazebo>  
+    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+      <parameters>/home/yangjingyun/robots/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
     </plugin>
   </gazebo>
   <gazebo reference="base_link">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="link_1">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="link_2">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="link_3">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="link_4">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="link_5">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="link_6">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="flange">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="tool0">
-    <gravity>0</gravity>
+    <turnGravityOff>true</turnGravityOff>
   </gazebo>
-
 </robot>

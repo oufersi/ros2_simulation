@@ -54,7 +54,7 @@
                     <geometry>
                         <mesh>
                             <scale>10 0.5 0.5</scale>
-                            <uri>/home/yjy/robo_ws/src/warehouse_manage/models/conveyor_belt/meshes/conveyor_belt.dae</uri>
+                            <uri>package://warehouse_manage/models/conveyor_belt/meshes/conveyor_belt.dae</uri>
                         </mesh>
                     </geometry>
                 </visual>
@@ -63,7 +63,7 @@
                     <geometry>
                         <mesh>
                             <scale>10 0.5 0.5</scale>
-                            <uri>/home/yjy/robo_ws/src/warehouse_manage/models/conveyor_belt/meshes/conveyor_belt.dae</uri>
+                            <uri>package://warehouse_manage/models/conveyor_belt/meshes/conveyor_belt.dae</uri>
                         </mesh>
                     </geometry>
                 </collision>

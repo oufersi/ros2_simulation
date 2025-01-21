@@ -8,7 +8,7 @@
     ros2 topic echo /model/diff_drive/odometry
 -->
 <sdf version="1.8">
-  <world name="demo">
+  <world name="warehosue">  
     <plugin
       filename="gz-sim-physics-system"
       name="gz::sim::systems::Physics">
@@ -80,6 +80,7 @@
       <static>false</static>
       <pose relative_to="world">-2.18 1.04 0.87 0 0 0</pose>
       <link name="chassic">
+        <gravity>false</gravity>
         <pose relative_to="__model__">0 0 0 0 0 0</pose>
         <collision name="collision">
           <geometry>
@@ -101,7 +102,7 @@
     <include>
       <name>conveyor_belt</name>
       <pose>-1 1 0 0 0 0</pose>
-      <uri>file:///home/yjy/robo_ws/src/warehouse_manage/models/conveyor_belt</uri>
+      <uri>model://warehouse_manage/models/conveyor_belt</uri>
     </include>
 
   </world>
