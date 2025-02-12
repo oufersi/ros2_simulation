@@ -9,6 +9,6 @@
     <xacro:include filename="abb_irb4600_60_205.ros2_control.xacro" />
 
 
-    <xacro:abb_irb4600_60_205_ros2_control name="GazeboSimSystem" initial_positions_file="$(arg initial_positions_file)"/>
+    <xacro:abb_irb4600_60_205_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
 
 </robot>

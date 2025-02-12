@@ -6,6 +6,128 @@
 <robot name="abb_irb4600_60_205">
   <!-- link list -->
   
+  <!-- <link name="world"/> -->
+
+  <link name="chassis">
+    <inertial>
+      <mass value="10.0"/>
+      <inertia ixx="0.095329" ixy="0.0" ixz="0.0" iyy="0.381317" iyz="0.0" izz="0.476646"/>
+    </inertial>
+    
+    <visual name="visual">
+        <geometry>
+            <box size="2.0 1.0 0.5"/>
+        </geometry>
+        <material name="blue">
+            <color rgba="0.0 0.0 1.0 1"/>
+        </material>
+    </visual>
+
+    <collision name="collision">
+        <geometry>
+            <box size="2.0 1.0 0.5"/>
+        </geometry>
+    </collision>
+  </link>
+  <link name="left_wheel">
+      <inertial>
+          <mass value="1"/>
+          <inertia ixx="0.043333" ixy="0.0" ixz="0.0" iyy="0.043333" iyz="0.0" izz="0.08"/>
+      </inertial>
+      <visual>
+          <geometry>
+              <cylinder radius="0.4" length="0.2"/>
+          </geometry>
+          <material name="red">
+              <color rgba="1.0 0.0 0.0 1"/>
+          </material>
+      </visual>
+      <collision>
+          <geometry>
+              <cylinder radius="0.4" length="0.2"/>
+          </geometry>
+      </collision>
+  </link>
+  <link name="right_wheel">
+      <inertial>
+          <mass value="1"/>
+          <inertia ixx="0.043333" ixy="0.0" ixz="0.0" iyy="0.043333" iyz="0.0" izz="0.08"/>
+      </inertial>
+      <visual>
+          <geometry>
+              <cylinder radius="0.4" length="0.2"/>
+          </geometry>
+          <material name="red">
+              <color rgba="1.0 0.0 0.0 1"/>
+          </material>
+      </visual>
+      <collision>
+          <geometry>
+              <cylinder radius="0.4" length="0.2"/>
+          </geometry>
+      </collision>
+  </link>
+<!-- Caster Pitch Intermediate Link -->
+  <link name="caster_pitch">
+      <inertial>
+          <mass value="0.01"/>
+          <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+      </inertial>
+      <visual>
+          <geometry>
+              <sphere radius="0.01"/> <!-- Small dummy geometry -->
+          </geometry>
+          <material>
+              <color rgba="0.0 0.0 0.0 0"/>
+          </material>
+      </visual>
+      <collision>
+          <geometry>
+              <sphere radius="0.01"/>
+          </geometry>
+      </collision>
+  </link>
+  <!-- Caster Roll Intermediate Link -->
+  <link name="caster_roll">
+      <inertial>
+          <mass value="0.01"/>
+          <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+      </inertial>
+      <visual>
+          <geometry>
+              <sphere radius="0.01"/>
+          </geometry>
+          <material>
+              <color rgba="0.0 0.0 0.0 0"/>
+          </material>
+      </visual>
+      <collision>
+          <geometry>
+              <sphere radius="0.01"/>
+          </geometry>
+      </collision>
+  </link>
+
+  <link name="caster">
+      <inertial>
+          <mass value="1"/>
+          <inertia ixx="0.016" ixy="0.0" ixz="0.0" iyy="0.016" iyz="0.0" izz="0.016"/>
+      </inertial>
+      <visual>
+          <geometry>
+              <sphere radius="0.2"/>
+          </geometry>
+          <material name="red">
+              <color rgba="0.0 1.0 0.0 1"/>
+          </material>
+      </visual>
+      <collision>
+          <geometry>
+              <sphere radius="0.2"/>
+          </geometry>
+      </collision>
+  </link>
+
   <link name="base_link">
     <collision name="collision">
       <geometry>
@@ -21,7 +143,7 @@
       </material>
     </visual>
     <inertial>
-      <mass value="1.0" />
+      <mass value="10.0" />
       <inertia ixx="0.2083" ixy="0.0" ixz="0.0" iyy="0.2083" iyz="0.0" izz="0.3333"/>
     </inertial>
   </link>
@@ -129,47 +251,103 @@
   </link>
   <!-- end of link list -->
   <!-- joint list -->
+  <!-- <joint name="world_to_base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 1">
+    <parent link="world">
+    <child link="base_link">
+  </joint> -->
+  <joint name="left_wheel_joint" type="revolute">
+    <parent link="chassis"/>
+    <child link="left_wheel"/>
+    <origin xyz="-0.5 0.6 0" rpy="-1.5707 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-1.79769e+308" upper="1.79769e+308" velocity="30.0"/>
+    <dynamics damping="0.3" friction="0.0"/>
+  </joint>
+  <joint name="right_wheel_joint" type="revolute">
+    <parent link="chassis"/>
+    <child link="right_wheel"/>
+    <origin xyz="-0.5 -0.6 0" rpy="-1.5707 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-1.79769e+308" upper="1.79769e+308" velocity="30.0"/>
+    <dynamics damping="0.3" friction="0.0"/>
+  </joint>
+  <joint name="caster_pitch_joint" type="revolute">
+      <parent link="chassis"/>
+      <child link="caster_pitch"/>
+      <origin xyz="0.8 0 -0.2" rpy="0 0 0"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-1.79769e+308" upper="1.79769e+308" effort="50" velocity="5"/>
+  </joint>
+  <joint name="caster_roll_joint" type="revolute">
+      <parent link="caster_pitch"/>
+      <child link="caster_roll"/>
+      <origin xyz="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.79769e+308" upper="1.79769e+308" effort="50" velocity="5"/>
+  </joint>
+  <joint name="caster_spin_joint" type="revolute">
+      <parent link="caster_roll"/>
+      <child link="caster"/>
+      <origin xyz="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-1.79769e+308" upper="1.79769e+308" effort="50" velocity="5"/>
+  </joint>
+
+  <joint name="chassis_to_base" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.25"/>
+    <parent link="chassis"/>
+    <child link="base_link"/>
+  </joint>
+
+
   <joint name="joint_1" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.495"/>
     <axis xyz="0 0 1"/>
     <parent link="base_link"/>
     <child link="link_1"/>
-    <limit effort="0" lower="-3.141" upper="3.141" velocity="3.054"/>
+    <limit effort="1000.0" lower="-15.0" upper="15.0" velocity="30.0"/>
+    <dynamics damping="1.0" friction="100.0"/>
   </joint>
   <joint name="joint_2" type="revolute">
     <origin rpy="0 0 0" xyz="0.175 0 0"/>
     <axis xyz="0 1 0"/>
     <parent link="link_1"/>
     <child link="link_2"/>
-    <limit effort="0" lower="-1.570" upper="2.617" velocity="3.054"/>
+    <limit effort="1000.0" lower="-15.0" upper="15.0" velocity="30.0"/>
+    <dynamics damping="1.0" friction="100.0"/>
   </joint>
   <joint name="joint_3" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.9"/>
     <axis xyz="0 1 0"/>
     <parent link="link_2"/>
     <child link="link_3"/>
-    <limit effort="0" lower="-3.141" upper="1.308" velocity="3.054"/>
+    <limit effort="1000.0" lower="-15.0" upper="15.0" velocity="30.0"/>
+    <dynamics damping="1.0" friction="100.0"/>
   </joint>
   <joint name="joint_4" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.175"/>
     <axis xyz="1 0 0"/>
     <parent link="link_3"/>
     <child link="link_4"/>
-    <limit effort="0" lower="-6.981" upper="6.981" velocity="4.363"/>
+    <limit effort="1000.0" lower="-15.0" upper="15.0" velocity="30.0"/>
+    <dynamics damping="1.0" friction="100.0"/>
   </joint>
   <joint name="joint_5" type="revolute">
     <origin rpy="0 0 0" xyz="0.960 0 0 "/>
     <axis xyz="0 1 0"/>
     <parent link="link_4"/>
     <child link="link_5"/>
-    <limit effort="0" lower="-2.181" upper="2.094" velocity="4.363"/>
+    <limit effort="1000.0" lower="-15.0" upper="15.0" velocity="30.0"/>
+    <dynamics damping="1.0" friction="0.0"/>
   </joint>
   <joint name="joint_6" type="revolute">
     <origin rpy="0 0 0" xyz="0.135 0 0 "/>
     <axis xyz="1 0 0"/>
     <parent link="link_5"/>
     <child link="link_6"/>
-    <limit effort="0" lower="-6.981" upper="6.981" velocity="6.283" />
+    <limit effort="1000.0" lower="-15.0" upper="15.0" velocity="30.0"/>
+    <dynamics damping="1.0" friction="100.0"/>
   </joint>
   <!-- end of joint list -->
   <!-- ROS-Industrial 'base' frame: base_link to ABB World Coordinates transform -->
@@ -227,6 +405,7 @@
         <param name="initial_value">0.0</param> 
       </state_interface>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>
     </joint>
     <joint name="joint_2">
       <command_interface name="position" />
@@ -234,6 +413,7 @@
         <param name="initial_value">0.0</param> 
       </state_interface>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>
     </joint>
     <joint name="joint_3">
       <command_interface name="position" />
@@ -241,6 +421,7 @@
         <param name="initial_value">0.0</param> 
       </state_interface>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>
     </joint>
     <joint name="joint_4">
       <command_interface name="position" />
@@ -248,6 +429,7 @@
         <param name="initial_value">0.0</param> 
       </state_interface>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>
     </joint>
     <joint name="joint_5">
       <command_interface name="position" />
@@ -255,6 +437,7 @@
         <param name="initial_value">0.0</param> 
       </state_interface>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>
     </joint>
     <joint name="joint_6">
       <command_interface name="position" />
@@ -262,6 +445,7 @@
         <param name="initial_value">0.0</param> 
       </state_interface>
       <state_interface name="velocity"/>
+      <state_interface name="effort"/>
     </joint>
   </ros2_control>
 
@@ -269,32 +453,62 @@
     <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
       <parameters>/home/yangjingyun/robots/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
     </plugin>
-  </gazebo>
-  <gazebo reference="base_link">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="link_1">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="link_2">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="link_3">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="link_4">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="link_5">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="link_6">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="flange">
-    <turnGravityOff>true</turnGravityOff>
-  </gazebo>
-  <gazebo reference="tool0">
-    <turnGravityOff>true</turnGravityOff>
+    
+    <plugin
+      filename="libignition-gazebo-diff-drive-system.so"
+      name="ignition::gazebo::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>1.2</wheel_separation>
+      <wheel_radius>0.4</wheel_radius>
+      <odom_publish_frequency>1</odom_publish_frequency>
+      <topic>cmd_vel</topic>
+    </plugin>
+
+    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+        name="ignition::gazebo::systems::TriggeredPublisher">
+      <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+          <match field="data">16777235</match>
+      </input>
+      <output type="ignition.msgs.Twist" topic="/cmd_vel">
+          linear: {x: 0.5}, angular: {z: 0.0}
+      </output>
+    </plugin>
+    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+            name="ignition::gazebo::systems::TriggeredPublisher">
+      <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+          <match field="data">16777237</match>
+      </input>
+      <output type="ignition.msgs.Twist" topic="/cmd_vel">
+          linear: {x: -0.5}, angular: {z: 0.0}
+      </output>
+    </plugin>
+    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+            name="ignition::gazebo::systems::TriggeredPublisher">
+      <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+          <match field="data">16777234</match>
+      </input>
+      <output type="ignition.msgs.Twist" topic="/cmd_vel">
+          linear: {x: 0.0}, angular: {z: 0.5}
+      </output>
+    </plugin>
+    <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+            name="ignition::gazebo::systems::TriggeredPublisher">
+      <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+          <match field="data">16777236</match>
+      </input>
+      <output type="ignition.msgs.Twist" topic="/cmd_vel">
+          linear: {x: 0.0}, angular: {z: -0.5}
+      </output>
+    </plugin>
+        <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+            name="ignition::gazebo::systems::TriggeredPublisher">
+      <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+          <match field="data">83</match>
+      </input>
+      <output type="ignition.msgs.Twist" topic="/cmd_vel">
+          linear: {x: 0.0}, angular: {z: 0.0}
+      </output>
+    </plugin>
   </gazebo>
 </robot>
