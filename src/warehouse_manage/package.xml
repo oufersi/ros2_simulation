@@ -10,6 +10,11 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>abb_irb_support</depend>
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf_transformations</depend>
+  <depend>python3-numpy</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

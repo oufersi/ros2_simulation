@@ -23,6 +23,8 @@ setup(
             'talker = warehouse_py.publisher_member_function:main',
             'listener = warehouse_py.subscriber_member_function:main',
             'joint_trajectory = warehouse_py.joint_trajectory_publisher:main',
+            'diff_drive = warehouse_py.diff_drive:main',
+            'test = warehouse_py.test:main',
         ],
     },
 )

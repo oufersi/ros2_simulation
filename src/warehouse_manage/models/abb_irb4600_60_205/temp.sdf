@@ -1,9 +1,9 @@
-<sdf version='1.9'>
+<sdf version='1.11'>
   <model name='abb_irb4600_60_205'>
     <link name='base_link'>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        <mass>1</mass>
+        <mass>10</mass>
         <inertia>
           <ixx>0.20830000000000001</ixx>
           <ixy>0</ixy>
@@ -35,7 +35,6 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <gravity>false</gravity>
     </link>
     <joint name='joint_1' type='revolute'>
       <pose relative_to='base_link'>0 0 0.495 0 0 0</pose>
@@ -44,12 +43,14 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-3.141</lower>
-          <upper>3.141</upper>
-          <effort>0</effort>
-          <velocity>3.0539999999999998</velocity>
+          <lower>-15</lower>
+          <upper>15</upper>
+          <effort>1000</effort>
+          <velocity>30</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>100</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
@@ -91,21 +92,22 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <gravity>false</gravity>
     </link>
     <joint name='joint_2' type='revolute'>
-      <pose relative_to='link_1'>0.175 0 0 0 0 0</pose>
+      <pose relative_to='link_1'>0.17499999999999999 0 0 0 0 0</pose>
       <parent>link_1</parent>
       <child>link_2</child>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-1.5700000000000001</lower>
-          <upper>2.617</upper>
-          <effort>0</effort>
-          <velocity>3.0539999999999998</velocity>
+          <lower>-15</lower>
+          <upper>15</upper>
+          <effort>1000</effort>
+          <velocity>30</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>100</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
@@ -147,21 +149,22 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <gravity>false</gravity>
     </link>
     <joint name='joint_3' type='revolute'>
-      <pose relative_to='link_2'>0 0 0.9 0 0 0</pose>
+      <pose relative_to='link_2'>0 0 0.90000000000000002 0 0 0</pose>
       <parent>link_2</parent>
       <child>link_3</child>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-3.141</lower>
-          <upper>1.3080000000000001</upper>
-          <effort>0</effort>
-          <velocity>3.0539999999999998</velocity>
+          <lower>-15</lower>
+          <upper>15</upper>
+          <effort>1000</effort>
+          <velocity>30</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>100</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
@@ -203,21 +206,22 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <gravity>false</gravity>
     </link>
     <joint name='joint_4' type='revolute'>
-      <pose relative_to='link_3'>0 0 0.175 0 0 0</pose>
+      <pose relative_to='link_3'>0 0 0.17499999999999999 0 0 0</pose>
       <parent>link_3</parent>
       <child>link_4</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
-          <lower>-6.9809999999999999</lower>
-          <upper>6.9809999999999999</upper>
-          <effort>0</effort>
-          <velocity>4.3630000000000004</velocity>
+          <lower>-15</lower>
+          <upper>15</upper>
+          <effort>1000</effort>
+          <velocity>30</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>100</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
@@ -259,21 +263,22 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <gravity>false</gravity>
     </link>
     <joint name='joint_5' type='revolute'>
-      <pose relative_to='link_4'>0.96 0 0 0 0 0</pose>
+      <pose relative_to='link_4'>0.95999999999999996 0 0 0 0 0</pose>
       <parent>link_4</parent>
       <child>link_5</child>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-2.181</lower>
-          <upper>2.0939999999999999</upper>
-          <effort>0</effort>
-          <velocity>4.3630000000000004</velocity>
+          <lower>-15</lower>
+          <upper>15</upper>
+          <effort>1000</effort>
+          <velocity>30</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
@@ -315,21 +320,22 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <gravity>false</gravity>
     </link>
     <joint name='joint_6' type='revolute'>
-      <pose relative_to='link_5'>0.135 0 0 0 0 0</pose>
+      <pose relative_to='link_5'>0.13500000000000001 0 0 0 0 0</pose>
       <parent>link_5</parent>
       <child>link_6</child>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
-          <lower>-6.9809999999999999</lower>
-          <upper>6.9809999999999999</upper>
-          <effort>0</effort>
-          <velocity>6.2830000000000004</velocity>
+          <lower>-15</lower>
+          <upper>15</upper>
+          <effort>1000</effort>
+          <velocity>30</velocity>
         </limit>
         <dynamics>
+          <damping>1</damping>
+          <friction>100</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
@@ -339,14 +345,14 @@
       <pose relative_to='joint_6'>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
-        <mass>2</mass>
+        <mass>3</mass>
         <inertia>
-          <ixx>0.54159999999999997</ixx>
+          <ixx>0.74990000000000001</ixx>
           <ixy>0</ixy>
           <ixz>7.654042494670956e-18</ixz>
-          <iyy>0.41660000000000003</iyy>
+          <iyy>0.62490000000000001</iyy>
           <iyz>0</iyz>
-          <izz>0.54159999999999997</izz>
+          <izz>0.87490000000000001</izz>
         </inertia>
       </inertial>
       <collision name='link_6_fixed_joint_lump__collision_collision'>
@@ -358,21 +364,21 @@
           </mesh>
         </geometry>
       </collision>
-      <collision name='link_6_fixed_joint_lump__tool0_collision_1'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+      <collision name='link_6_fixed_joint_lump__flange_collision_1'>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.05 0.05 0.05</size>
+            <size>0.001 0.001 0.001</size>
           </box>
         </geometry>
-        <surface>
-          <contact>
-            <ode/>
-          </contact>
-          <friction>
-            <ode/>
-          </friction>
-        </surface>
+      </collision>
+      <collision name='link_6_fixed_joint_lump__tool_0_collision_2'>
+        <pose>0 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000000000000003 0.050000000000000003 0.050000000000000003</size>
+          </box>
+        </geometry>
       </collision>
       <visual name='link_6_fixed_joint_lump__visual_visual'>
         <pose>0 0 0 0 0 0</pose>
@@ -387,30 +393,45 @@
           <ambient>1 1 0 1</ambient>
         </material>
       </visual>
-      <visual name='link_6_fixed_joint_lump__tool0_visual_1'>
-        <pose>0 0 0 0 1.570796326794897 0</pose>
+      <visual name='link_6_fixed_joint_lump__flange_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.05 0.05 0.05</size>
+            <size>0.001 0.001 0.001</size>
           </box>
         </geometry>
       </visual>
-      <gravity>false</gravity>
+      <visual name='link_6_fixed_joint_lump__tool_0_visual_2'>
+        <pose>0 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.050000000000000003 0.050000000000000003 0.050000000000000003</size>
+          </box>
+        </geometry>
+      </visual>
     </link>
-    <plugin name='ign_ros2_control::IgnitionROS2ControlPlugin' filename='ign_ros2_control-system'>
-      <parameters>/home/yangjingyun/robots/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
+    <plugin name='gz_ros2_control::GazeboSimROS2ControlPlugin' filename='gz_ros2_control-system'>
+      <parameters>/home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
     </plugin>
-    <frame name='base_link-base' attached_to='base_link'>
-      <pose>0 0 0 0 -0 0</pose>
-    </frame>
-    <frame name='base' attached_to='base_link-base'/>
+    <plugin name='gz::sim::systems::DetachableJoint' filename='gz-sim-detachable-joint-system'>
+      <parent_link>tool_0</parent_link>
+      <child_model>box</child_model>
+      <child_link>base_link</child_link>
+      <detach_topic>/B1/detach</detach_topic>
+      <attach_topic>/B1/attach</attach_topic>
+      <output_topic>/B1/state</output_topic>
+    </plugin>
     <frame name='link_6-tool0' attached_to='flange'>
-      <pose>0 0 0 0 1.5708 0</pose>
+      <pose>0 0 0 0 1.5707963267948966 0</pose>
     </frame>
-    <frame name='tool0' attached_to='link_6-tool0'/>
+    <frame name='tool_0' attached_to='link_6-tool0'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
     <frame name='joint_6-flange' attached_to='link_6'>
-      <pose>0 0 0 0 -0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
     </frame>
-    <frame name='flange' attached_to='joint_6-flange'/>
+    <frame name='flange' attached_to='joint_6-flange'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
   </model>
 </sdf>

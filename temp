@@ -1,0 +1,1 @@
+ros2 run controller_manager spawner joint_state_broadcaster -param-file /home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml
