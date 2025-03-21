@@ -294,10 +294,10 @@
     </joint>
   </ros2_control>
 
-  <gazebo>
+  <!-- <gazebo>
     <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
       <parameters>/home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
-    </plugin>
+    </plugin> -->
     <!-- <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
       <parameters>/home/yangjingyun/robots/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
     </plugin> -->
@@ -310,5 +310,5 @@
       <attach_topic>/B1/attach</attach_topic>
       <output_topic>/B1/state</output_topic>
     </plugin> -->
-  </gazebo>
+  <!-- </gazebo> -->
 </robot>

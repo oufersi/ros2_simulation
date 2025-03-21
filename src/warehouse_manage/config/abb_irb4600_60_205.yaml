@@ -1,4 +1,4 @@
-controller_manager:
+/**/controller_manager:
   ros__parameters:
     update_rate: 100
     use_sim_time: true
@@ -10,7 +10,7 @@ controller_manager:
       type: joint_state_broadcaster/JointStateBroadcaster
 
 
-joint_trajectory_controller:
+/**/joint_trajectory_controller:
   ros__parameters:
     joints:
       - joint_1

@@ -65,7 +65,10 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[robot_description]
+        namespace='my_ns',
+        parameters=[
+            robot_description,
+        ]
     )
 
     # gz_spawn_box = Node(
@@ -117,6 +120,7 @@ def generate_launch_description():
     load_joint_state_broadcaster = Node(
         package='controller_manager',
         executable='spawner',
+        namespace='my_ns',
         arguments=[
             'joint_state_broadcaster',
             '--param-file',
@@ -128,6 +132,7 @@ def generate_launch_description():
     load_joint_trajectory_controller = Node(
         package='controller_manager',
         executable='spawner',
+        namespace='my_ns',
         arguments=[
             'joint_trajectory_controller',
             '--param-file',
@@ -138,6 +143,7 @@ def generate_launch_description():
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
+        namespace='my_ns',
         arguments=[
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
         ],
@@ -161,11 +167,12 @@ def generate_launch_description():
     )
 
     moveit_config_dict = moveit_config.to_dict()
-    moveit_config_dict.update({"use_sim_time" : True})
-    print("")
-    print(moveit_config_dict["planning_pipelines"])
-    moveit_config_dict.update({"planning_pipelines" : ["ompl"]})
-
+    moveit_config_dict.update({
+        "use_sim_time" : True,
+        # "namespace" : "my_ns",
+        "planning_pipelines" : ["ompl"],
+    })
+    
     moveit_py_node = Node(
         name="moveit_py",
         package="warehouse_manage",
@@ -177,6 +184,7 @@ def generate_launch_description():
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
+        namespace="my_ns",
         output="screen",
         parameters=[
             moveit_config_dict
@@ -189,12 +197,16 @@ def generate_launch_description():
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
+        namespace="my_ns",
         output="screen",
         arguments=["-d", rviz_config_file],
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
-        ]
+        ],
+        # remappings=[
+        #     ("/tf", "/my_ns/tf"),
+        # ]
     )
 
     # Scenario config

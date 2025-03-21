@@ -73,15 +73,28 @@
 
     <include>
         <uri>model://warehouse_manage/models/abb_irb4600_60_205</uri>
-        <name>abb_irb4600_60_205_1</name>
+        <name>abb_irb4600_60_205</name>
         <pose>6.39 -5.70 0.60 0 0 1.57</pose>
+
+        <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>/home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
+            <ros>
+                <namespace>my_ns</namespace>
+                <!-- <remapping>/robot_description:=/robot_description_full</remapping> -->
+            </ros>
+        </plugin>
     </include>
 
     <include>
         <uri>model://warehouse_manage/models/diff_drive</uri>
-        <name>diff_drive_1</name>
+        <name>diff_drive</name>
         <pose>6.39 -5.70 0.40 0 0 1.57</pose>
     </include>
+
+    <!-- <joint name="platform_to_manipulator" type="fixed">
+        <parent>diff_drive_1::chassis</parent>
+        <child>abb_irb4600_60_205_1::base_link</child>
+    </joint>
 
     <include>
         <uri>model://warehouse_manage/models/abb_irb4600_60_205</uri>
@@ -95,6 +108,11 @@
         <pose>9.39 -5.70 0.40 0 0 1.57</pose>
     </include>
 
+    <joint name="platform_to_manipulator" type="fixed">
+        <parent>diff_drive_2::chassis</parent>
+        <child>abb_irb4600_60_205_2::base_link</child>
+    </joint> -->
+    
     <!-- <include>
         <uri>model://warehouse_manage/models/conveyor_belt</uri>
         <name>conveyor_belt</name>
@@ -825,17 +843,6 @@
             <output_topic>/box_2/state</output_topic>
         </plugin>
     </model>
-
-
-    <joint name="platform_to_manipulator" type="fixed">
-        <parent>diff_drive_1::chassis</parent>
-        <child>abb_irb4600_60_205_1::base_link</child>
-    </joint>
-
-    <joint name="platform_to_manipulator" type="fixed">
-        <parent>diff_drive_2::chassis</parent>
-        <child>abb_irb4600_60_205_2::base_link</child>
-    </joint>
 
     <!-- <gui>
         <plugin filename="libgz_keypublisher.so" name="gazebo::KeyPublisher"/>
