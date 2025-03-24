@@ -43,11 +43,7 @@ def generate_launch_description():
     print(f"\n{os.environ['GZ_SIM_RESOURCE_PATH']}\n")
 
     use_sim_time = LaunchConfiguration('use_sim_time', default=True)
-    moveit_py_example_file = DeclareLaunchArgument(
-        "moveit_py_example_file",
-        default_value="motion_planning_python_api_tutorial.py",
-        description="Python file to run the MoveIt Python example",
-    )
+    namespace = None
 
     with open(os.path.join(warehouse_pkg, 'models', 'abb_irb4600_60_205', 'model.urdf')) as f:
         robot_description_content = f.read()
@@ -65,7 +61,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        namespace='my_ns',
+        namespace=namespace,
         parameters=[
             robot_description,
         ]
@@ -120,7 +116,7 @@ def generate_launch_description():
     load_joint_state_broadcaster = Node(
         package='controller_manager',
         executable='spawner',
-        namespace='my_ns',
+        namespace=namespace,
         arguments=[
             'joint_state_broadcaster',
             '--param-file',
@@ -132,7 +128,7 @@ def generate_launch_description():
     load_joint_trajectory_controller = Node(
         package='controller_manager',
         executable='spawner',
-        namespace='my_ns',
+        namespace=namespace,
         arguments=[
             'joint_trajectory_controller',
             '--param-file',
@@ -143,7 +139,7 @@ def generate_launch_description():
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-        namespace='my_ns',
+        namespace=namespace,
         arguments=[
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
         ],
@@ -173,21 +169,33 @@ def generate_launch_description():
         "planning_pipelines" : ["ompl"],
     })
     
-    moveit_py_node = Node(
-        name="moveit_py",
-        package="warehouse_manage",
-        executable=LaunchConfiguration("moveit_py_example_file"),
-        output="both",
-        parameters=[moveit_config.to_dict()],
-    )
+    # moveit_py_node = Node(
+    #     name="moveit_py",
+    #     package="warehouse_manage",
+    #     executable=LaunchConfiguration("moveit_py_example_file"),
+    #     output="both",
+    #     parameters=[moveit_config.to_dict()],
+    # )
 
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
-        namespace="my_ns",
+        namespace= f"{namespace}" if namespace != None else None,
         output="screen",
         parameters=[
             moveit_config_dict
+        ],
+        remappings=[
+            # ("moveit/describe_parameters", "move_group/moveit/describe_parameters"),
+            # ("moveit/describe_parameters", "move_group/moveit/describe_parameters"),
+            # ("moveit/get_parameter_types", "move_group/moveit/get_parameter_types"),
+            # ("moveit/get_parameters", "move_group/moveit/get_parameters"),
+            # ("moveit/get_type_description", "move_group/moveit/get_type_description"),
+            # ("moveit/list_parameters", "move_group/moveit/list_parameters"),
+            # ("moveit/set_parameters", "move_group/moveit/set_parameters"),
+            # ("moveit/set_parameters_atomically", "move_group/moveit/set_parameters_atomically"),
+            # ("joint_states", f"/{namespace}/joint_states"),
+            # ("robot_description", f"/{namespace}/robot_description"),
         ]
     )
 
@@ -197,16 +205,26 @@ def generate_launch_description():
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
-        namespace="my_ns",
+        namespace=namespace,
         output="screen",
         arguments=["-d", rviz_config_file],
         parameters=[
-            moveit_config.robot_description,
-            moveit_config.robot_description_semantic,
+            # moveit_config.robot_description,
+            # moveit_config.robot_description_semantic,
+            moveit_config_dict
         ],
-        # remappings=[
-        #     ("/tf", "/my_ns/tf"),
-        # ]
+        remappings= None if namespace == None else [
+            ('/move_action', f'/{namespace}/move_action'),
+            ('/execute_trajectory', f'/{namespace}/execute_trajectory'),
+
+            ('/execute_trajectory/_action/feedback', f'/{namespace}/execute_trajectory/_action/feedback'),
+            ('/execute_trajectory/_action/status', f'/{namespace}/execute_trajectory/_action/status'),
+            ('/move_action/_action/feedback', f'/{namespace}/move_action/_action/feedback'),
+            ('/move_action/_action/status', f'/{namespace}/move_action/_action/status'),
+            
+            ('/attached_collision_object', f'/{namespace}/attached_collision_object'),
+            ('/trajectory_execution_event', f'/{namespace}/trajectory_execution_event'),
+        ]
     )
 
     # Scenario config
@@ -283,5 +301,5 @@ if __name__ == "__main__":
 
     moveit_config_dict = moveit_config.to_dict()
 
-    print(moveit_config.planning_pipelines["planning_pipelines"])
+    print(moveit_config_dict["move_group"])
     

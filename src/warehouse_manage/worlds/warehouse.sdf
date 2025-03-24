@@ -73,13 +73,13 @@
 
     <include>
         <uri>model://warehouse_manage/models/abb_irb4600_60_205</uri>
-        <name>abb_irb4600_60_205</name>
+        <name>abb_irb4600_60_205_1</name>
         <pose>6.39 -5.70 0.60 0 0 1.57</pose>
 
         <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
             <parameters>/home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml</parameters>
             <ros>
-                <namespace>my_ns</namespace>
+                <!-- <namespace>MyNs</namespace> -->
                 <!-- <remapping>/robot_description:=/robot_description_full</remapping> -->
             </ros>
         </plugin>
@@ -87,16 +87,16 @@
 
     <include>
         <uri>model://warehouse_manage/models/diff_drive</uri>
-        <name>diff_drive</name>
+        <name>diff_drive_1</name>
         <pose>6.39 -5.70 0.40 0 0 1.57</pose>
     </include>
 
-    <!-- <joint name="platform_to_manipulator" type="fixed">
+    <joint name="platform_to_manipulator" type="fixed">
         <parent>diff_drive_1::chassis</parent>
         <child>abb_irb4600_60_205_1::base_link</child>
     </joint>
 
-    <include>
+    <!-- <include>
         <uri>model://warehouse_manage/models/abb_irb4600_60_205</uri>
         <name>abb_irb4600_60_205_2</name>
         <pose>9.39 -5.70 0.60 0 0 1.57</pose>
@@ -788,7 +788,7 @@
         <plugin filename="gz-sim-detachable-joint-system"
             name="gz::sim::systems::DetachableJoint">
             <parent_link>base_link</parent_link>
-            <child_model>abb_irb4600_60_205</child_model>
+            <child_model>abb_irb4600_60_205_1</child_model>
             <child_link>link_6</child_link>
             <detach_topic>/box_1/place</detach_topic>
             <attach_topic>/box_1/pick</attach_topic>
@@ -836,7 +836,7 @@
         <plugin filename="gz-sim-detachable-joint-system"
             name="gz::sim::systems::DetachableJoint">
             <parent_link>base_link</parent_link>
-            <child_model>abb_irb4600_60_205</child_model>
+            <child_model>abb_irb4600_60_205_1</child_model>
             <child_link>link_6</child_link>
             <detach_topic>/box_2/place</detach_topic>
             <attach_topic>/box_2/pick</attach_topic>

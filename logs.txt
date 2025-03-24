@@ -1,37 +1,37 @@
-[INFO] [launch]: All log files can be found below /home/yjy/.ros/log/2025-03-21-22-45-07-902945-yjy-XiaoXin-14-IAH8-19371
+[INFO] [launch]: All log files can be found below /home/yjy/.ros/log/2025-03-24-00-48-23-330977-yjy-XiaoXin-14-IAH8-14202
 [INFO] [launch]: Default logging verbosity is set to INFO
 
 /home/yjy/astar_proj/ros2_simulation/install/abb_irb4600_support/share:/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share
 
-[INFO] [gazebo-1]: process started with pid [19374]
-[INFO] [robot_state_publisher-2]: process started with pid [19375]
-[INFO] [spawner-3]: process started with pid [19376]
-[INFO] [parameter_bridge-4]: process started with pid [19378]
-[INFO] [move_group-5]: process started with pid [19379]
-[INFO] [rviz2-6]: process started with pid [19380]
-[robot_state_publisher-2] [WARN] [1742568308.663054186] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
-[robot_state_publisher-2] [INFO] [1742568308.663284203] [my_ns.robot_state_publisher]: Robot initialized
-[parameter_bridge-4] [INFO] [1742568308.752657082] [my_ns.ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
-[move_group-5] [INFO] [1742568308.815394166] [my_ns.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
-[move_group-5] [INFO] [1742568308.815632625] [my_ns.moveit.moveit.core.robot_model]: Loading robot model 'abb_irb4600_60_205'...
-[move_group-5] [WARN] [1742568308.841687168] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
-[move_group-5] [INFO] [1742568308.841892103] [my_ns.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'robot_arm': 1 1 1 1 1 1
-[move_group-5] [INFO] [1742568308.943449294] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
-[move_group-5] [INFO] [1742568308.943806535] [my_ns.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
-[move_group-5] [INFO] [1742568308.947511041] [my_ns.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
-[move_group-5] [INFO] [1742568308.948677537] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Listening to '/my_ns/attached_collision_object' for attached collision objects
-[move_group-5] [INFO] [1742568308.948729633] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
-[move_group-5] [INFO] [1742568308.948959683] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
-[move_group-5] [INFO] [1742568308.949746208] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
-[move_group-5] [INFO] [1742568308.949932731] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
-[move_group-5] [INFO] [1742568308.950866767] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Listening to '/my_ns/planning_scene'
-[move_group-5] [INFO] [1742568308.950934157] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
-[move_group-5] [INFO] [1742568308.953053585] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
-[move_group-5] [INFO] [1742568308.954115022] [my_ns.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
-[move_group-5] [WARN] [1742568308.954832088] [my_ns.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
-[rviz2-6] [INFO] [1742568309.254731224] [rviz2]: Stereo is NOT SUPPORTED
-[rviz2-6] [INFO] [1742568309.254869185] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
-[rviz2-6] [INFO] [1742568309.289167920] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [gazebo-1]: process started with pid [14205]
+[INFO] [robot_state_publisher-2]: process started with pid [14206]
+[INFO] [spawner-3]: process started with pid [14207]
+[INFO] [parameter_bridge-4]: process started with pid [14209]
+[INFO] [move_group-5]: process started with pid [14210]
+[INFO] [rviz2-6]: process started with pid [14211]
+[robot_state_publisher-2] [WARN] [1742748504.393084525] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1742748504.393262931] [robot_state_publisher]: Robot initialized
+[parameter_bridge-4] [INFO] [1742748504.441052079] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[move_group-5] [INFO] [1742748504.484442260] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-5] [INFO] [1742748504.484624081] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'abb_irb4600_60_205'...
+[move_group-5] [WARN] [1742748504.504837447] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[move_group-5] [INFO] [1742748504.504995075] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'robot_arm': 1 1 1 1 1 1
+[move_group-5] [INFO] [1742748504.602069602] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-5] [INFO] [1742748504.602361687] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-5] [INFO] [1742748504.604442547] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-5] [INFO] [1742748504.605464092] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-5] [INFO] [1742748504.605506703] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-5] [INFO] [1742748504.605720218] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-5] [INFO] [1742748504.606492599] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-5] [INFO] [1742748504.606650715] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-5] [INFO] [1742748504.607625030] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-5] [INFO] [1742748504.607671775] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-5] [INFO] [1742748504.609532248] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-5] [INFO] [1742748504.610633589] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-5] [WARN] [1742748504.611389557] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[rviz2-6] [INFO] [1742748504.909539765] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1742748504.909816957] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-6] [INFO] [1742748504.968013088] [rviz2]: Stereo is NOT SUPPORTED
 [gazebo-1] [1;36m[Dbg] [gz.cc:166] [0m[1;36mSubscribing to [[0m[1;36m/gazebo/starting_world[0m[1;36m].[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [gz.cc:168] [0m[1;36mWaiting for a world to be set from the GUI...[0m[1;36m[0m
 [gazebo-1] [1;32m[Msg] [0m[1;32mReceived world [[0m[1;32m/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/worlds/warehouse.sdf[0m[1;32m] from the GUI.[0m[1;32m[0m
@@ -42,35 +42,39 @@
 [gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="warehosue"]/model[@name="conveyor_2"]/scale:/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/worlds/warehouse.sdf:L282]: XML Element[scale], child of element[model], not defined in SDF. Copying[scale] as children of [model].
 [gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="warehosue"]/model[@name="conveyor_3"]/scale:/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/worlds/warehouse.sdf:L439]: XML Element[scale], child of element[model], not defined in SDF. Copying[scale] as children of [model].
 [gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/world[@name="warehosue"]/model[@name="conveyor_4"]/scale:/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/worlds/warehouse.sdf:L596]: XML Element[scale], child of element[model], not defined in SDF. Copying[scale] as children of [model].
-[move_group-5] [INFO] [1742568309.576026762] [my_ns.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
-[move_group-5] [INFO] [1742568309.578812115] [my_ns.move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
 [rviz2-6] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
 [rviz2-6]          at line 321 in /opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp
-[move_group-5] [INFO] [1742568309.582732525] [my_ns.move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
-[move_group-5] [INFO] [1742568309.582838386] [my_ns.move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
-[move_group-5] [INFO] [1742568309.586937942] [my_ns.move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
-[move_group-5] [INFO] [1742568309.587040795] [my_ns.move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
-[move_group-5] [INFO] [1742568309.587168989] [my_ns.move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
-[move_group-5] [INFO] [1742568309.587194958] [my_ns.move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
-[move_group-5] [INFO] [1742568309.587248688] [my_ns.move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
-[move_group-5] [INFO] [1742568309.590671540] [my_ns.move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
-[move_group-5] [INFO] [1742568309.598468475] [my_ns.move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
-[move_group-5] [INFO] [1742568309.598548300] [my_ns.move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
-[move_group-5] [INFO] [1742568309.607821221] [my_ns.move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
-[move_group-5] [INFO] [1742568309.607937912] [my_ns.move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
-[move_group-5] [INFO] [1742568309.610641167] [my_ns.move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-5] [INFO] [1742748505.400754760] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-5] [INFO] [1742748505.403207469] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-5] [INFO] [1742748505.406362459] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-5] [INFO] [1742748505.406428698] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-5] [INFO] [1742748505.407570880] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-5] [INFO] [1742748505.407651760] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-5] [INFO] [1742748505.407771367] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-5] [INFO] [1742748505.407890703] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-5] [INFO] [1742748505.407956718] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-5] [INFO] [1742748505.411109024] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-5] [INFO] [1742748505.419042337] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-5] [INFO] [1742748505.419123287] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-5] [INFO] [1742748505.426868402] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-5] [INFO] [1742748505.426963741] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-5] [INFO] [1742748505.428989998] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[spawner-3] [INFO] [1742748505.524082937] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
-[move_group-5] [INFO] [1742568309.818490532] [my_ns.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for joint_trajectory_controller
-[move_group-5] [INFO] [1742568309.818836848] [my_ns.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
-[move_group-5] [INFO] [1742568309.818885398] [my_ns.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
-[move_group-5] [INFO] [1742568309.820208308] [my_ns.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
-[move_group-5] [INFO] [1742568309.820266495] [my_ns.move_group]: MoveGroup debug mode is ON
-[move_group-5] [INFO] [1742568309.863732050] [my_ns.moveit.moveit.ros.move_group.executable]: 
+[move_group-5] [INFO] [1742748505.690354108] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for joint_trajectory_controller
+[move_group-5] [INFO] [1742748505.690734002] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-5] [INFO] [1742748505.690800883] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-5] [INFO] [1742748505.692421918] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-5] [INFO] [1742748505.692488856] [move_group]: MoveGroup debug mode is ON
+[gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[move_group-5] [INFO] [1742748505.781948881] [move_group.moveit.moveit.ros.move_group.executable]: 
 [move_group-5] 
 [move_group-5] ********************************************************
 [move_group-5] * MoveGroup using: 
@@ -89,8 +93,8 @@
 [move_group-5] *     - save_geometry_to_file
 [move_group-5] ********************************************************
 [move_group-5] 
-[move_group-5] [INFO] [1742568309.863870885] [my_ns.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
-[move_group-5] [INFO] [1742568309.863891759] [my_ns.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-5] [INFO] [1742748505.782091464] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-5] [INFO] [1742748505.782121552] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
 [move_group-5] [96mLoading 'move_group/ApplyPlanningSceneService'...[0m
 [move_group-5] [96mLoading 'move_group/ClearOctomapService'...[0m
 [move_group-5] [96mLoading 'move_group/GetUrdfService'...[0m
@@ -107,79 +111,83 @@
 [move_group-5] 
 [move_group-5] [92mYou can start planning now![0m
 [move_group-5] 
-[gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
-[gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
-[gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
-[spawner-3] [INFO] [1742568310.057681810] [my_ns.spawner_joint_state_broadcaster]: waiting for service /my_ns/controller_manager/list_controllers to become available...
-[gazebo-1] [INFO] [1742568310.653250012] [my_ns.gz_ros_control]: Loading controller_manager
-[gazebo-1] [INFO] [1742568310.682796978] [my_ns.controller_manager]: Subscribing to '/my_ns/robot_description' topic for robot description.
-[gazebo-1] [WARN] [1742568310.683181208] [my_ns.gz_ros_control]: Waiting RM to load and initialize hardware...
-[gazebo-1] [INFO] [1742568310.693757613] [my_ns.controller_manager]: Received robot description from topic.
-[gazebo-1] [INFO] [1742568310.702647620] [my_ns.gz_ros_control]: The position_proportional_gain has been set to: 0.1
-[gazebo-1] [INFO] [1742568310.702775626] [my_ns.gz_ros_control]: Loading joint: joint_1
-[gazebo-1] [INFO] [1742568310.702787672] [my_ns.gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1742568310.702794170] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702813888] [my_ns.gz_ros_control]: 			 found initial value: 0.000000
-[gazebo-1] [INFO] [1742568310.702825084] [my_ns.gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1742568310.702835993] [my_ns.gz_ros_control]: 		 effort
-[gazebo-1] [INFO] [1742568310.702842136] [my_ns.gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1742568310.702847670] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702866755] [my_ns.gz_ros_control]: Loading joint: joint_2
-[gazebo-1] [INFO] [1742568310.702872499] [my_ns.gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1742568310.702877489] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702883250] [my_ns.gz_ros_control]: 			 found initial value: 0.000000
-[gazebo-1] [INFO] [1742568310.702889089] [my_ns.gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1742568310.702895859] [my_ns.gz_ros_control]: 		 effort
-[gazebo-1] [INFO] [1742568310.702900990] [my_ns.gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1742568310.702905638] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702923026] [my_ns.gz_ros_control]: Loading joint: joint_3
-[gazebo-1] [INFO] [1742568310.702928289] [my_ns.gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1742568310.702933346] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702939012] [my_ns.gz_ros_control]: 			 found initial value: 0.000000
-[gazebo-1] [INFO] [1742568310.702945143] [my_ns.gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1742568310.702950707] [my_ns.gz_ros_control]: 		 effort
-[gazebo-1] [INFO] [1742568310.702957699] [my_ns.gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1742568310.702962416] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702975615] [my_ns.gz_ros_control]: Loading joint: joint_4
-[gazebo-1] [INFO] [1742568310.702980960] [my_ns.gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1742568310.702985845] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.702991008] [my_ns.gz_ros_control]: 			 found initial value: 0.000000
-[gazebo-1] [INFO] [1742568310.702996641] [my_ns.gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1742568310.703001899] [my_ns.gz_ros_control]: 		 effort
-[gazebo-1] [INFO] [1742568310.703007160] [my_ns.gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1742568310.703011861] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.703022754] [my_ns.gz_ros_control]: Loading joint: joint_5
-[gazebo-1] [INFO] [1742568310.703027981] [my_ns.gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1742568310.703032819] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.703038029] [my_ns.gz_ros_control]: 			 found initial value: 0.000000
-[gazebo-1] [INFO] [1742568310.703043527] [my_ns.gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1742568310.703048658] [my_ns.gz_ros_control]: 		 effort
-[gazebo-1] [INFO] [1742568310.703053511] [my_ns.gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1742568310.703058198] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.703070581] [my_ns.gz_ros_control]: Loading joint: joint_6
-[gazebo-1] [INFO] [1742568310.703075546] [my_ns.gz_ros_control]: 	State:
-[gazebo-1] [INFO] [1742568310.703080297] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.703085398] [my_ns.gz_ros_control]: 			 found initial value: 0.000000
-[gazebo-1] [INFO] [1742568310.703090875] [my_ns.gz_ros_control]: 		 velocity
-[gazebo-1] [INFO] [1742568310.703099174] [my_ns.gz_ros_control]: 		 effort
-[gazebo-1] [INFO] [1742568310.703106758] [my_ns.gz_ros_control]: 	Command:
-[gazebo-1] [INFO] [1742568310.703111609] [my_ns.gz_ros_control]: 		 position
-[gazebo-1] [INFO] [1742568310.703210083] [my_ns.gz_ros_control.resource_manager]: Initialize hardware 'GazeboSimSystem' 
-[gazebo-1] [INFO] [1742568310.703355346] [my_ns.gz_ros_control.resource_manager]: Successful initialization of hardware 'GazeboSimSystem'
-[gazebo-1] [INFO] [1742568310.703458523] [resource_manager]: 'configure' hardware 'GazeboSimSystem' 
-[gazebo-1] [INFO] [1742568310.703509574] [my_ns.gz_ros_control]: System Successfully configured!
-[gazebo-1] [INFO] [1742568310.703517424] [resource_manager]: Successful 'configure' of hardware 'GazeboSimSystem'
-[gazebo-1] [INFO] [1742568310.703537520] [resource_manager]: 'activate' hardware 'GazeboSimSystem' 
-[gazebo-1] [INFO] [1742568310.703544635] [resource_manager]: Successful 'activate' of hardware 'GazeboSimSystem'
-[gazebo-1] [INFO] [1742568310.703569472] [my_ns.controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
-[gazebo-1] [INFO] [1742568311.068172392] [my_ns.controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
-[gazebo-1] [INFO] [1742568311.068363395] [my_ns.controller_manager]: Loading controller 'joint_state_broadcaster'
-[gazebo-1] [INFO] [1742568311.076742796] [my_ns.controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml --param use_sim_time:=true 
-[spawner-3] [INFO] [1742568311.104500163] [my_ns.spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
-[gazebo-1] [INFO] [1742568311.106803117] [my_ns.controller_manager]: Configuring controller: 'joint_state_broadcaster'
-[gazebo-1] [INFO] [1742568311.107175671] [my_ns.joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
-[gazebo-1] [INFO] [1742568311.131016033] [my_ns.controller_manager]: Activating controllers: [ joint_state_broadcaster ]
-[rviz2-6] [ERROR] [1742568312.674742241] [my_ns.moveit_830033930.moveit.ros.motion_planning_frame]: Action server: /recognize_objects not available
+[gazebo-1] [INFO] [1742748506.773640851] [gz_ros_control]: Loading controller_manager
+[gazebo-1] [INFO] [1742748506.809229372] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-1] [WARN] [1742748506.809817077] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-1] [INFO] [1742748506.820177309] [controller_manager]: Received robot description from topic.
+[gazebo-1] [INFO] [1742748506.830832222] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1742748506.831006721] [gz_ros_control]: Loading joint: joint_1
+[gazebo-1] [INFO] [1742748506.831025332] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1742748506.831037050] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831078249] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-1] [INFO] [1742748506.831096693] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1742748506.831114059] [gz_ros_control]: 		 effort
+[gazebo-1] [INFO] [1742748506.831125082] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1742748506.831134831] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831165160] [gz_ros_control]: Loading joint: joint_2
+[gazebo-1] [INFO] [1742748506.831173977] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1742748506.831197333] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831233265] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-1] [INFO] [1742748506.831243924] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1742748506.831254464] [gz_ros_control]: 		 effort
+[gazebo-1] [INFO] [1742748506.831263825] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1742748506.831272434] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831296902] [gz_ros_control]: Loading joint: joint_3
+[gazebo-1] [INFO] [1742748506.831306029] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1742748506.831315744] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831325175] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-1] [INFO] [1742748506.831335269] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1742748506.831354909] [gz_ros_control]: 		 effort
+[gazebo-1] [INFO] [1742748506.831387760] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1742748506.831395935] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831428646] [gz_ros_control]: Loading joint: joint_4
+[gazebo-1] [INFO] [1742748506.831437681] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1742748506.831446746] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831456385] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-1] [INFO] [1742748506.831466370] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1742748506.831475818] [gz_ros_control]: 		 effort
+[gazebo-1] [INFO] [1742748506.831493003] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1742748506.831502269] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831522508] [gz_ros_control]: Loading joint: joint_5
+[gazebo-1] [INFO] [1742748506.831531456] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1742748506.831539893] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831549429] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-1] [INFO] [1742748506.831559389] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1742748506.831568354] [gz_ros_control]: 		 effort
+[gazebo-1] [INFO] [1742748506.831576945] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1742748506.831585176] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831606656] [gz_ros_control]: Loading joint: joint_6
+[gazebo-1] [INFO] [1742748506.831614742] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1742748506.831622354] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831630794] [gz_ros_control]: 			 found initial value: 0.000000
+[gazebo-1] [INFO] [1742748506.831639582] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1742748506.831652091] [gz_ros_control]: 		 effort
+[gazebo-1] [INFO] [1742748506.831660699] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1742748506.831668695] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1742748506.831833578] [gz_ros_control.resource_manager]: Initialize hardware 'GazeboSimSystem' 
+[gazebo-1] [INFO] [1742748506.832073945] [gz_ros_control.resource_manager]: Successful initialization of hardware 'GazeboSimSystem'
+[gazebo-1] [INFO] [1742748506.832244267] [resource_manager]: 'configure' hardware 'GazeboSimSystem' 
+[gazebo-1] [INFO] [1742748506.832255357] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1742748506.832269447] [resource_manager]: Successful 'configure' of hardware 'GazeboSimSystem'
+[gazebo-1] [INFO] [1742748506.832292363] [resource_manager]: 'activate' hardware 'GazeboSimSystem' 
+[gazebo-1] [INFO] [1742748506.832300102] [resource_manager]: Successful 'activate' of hardware 'GazeboSimSystem'
+[gazebo-1] [INFO] [1742748506.832379900] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-1] [INFO] [1742748507.033626736] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-1] [INFO] [1742748507.033761292] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1742748507.043817688] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml --param use_sim_time:=true 
+[spawner-3] [INFO] [1742748507.068930405] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gazebo-1] [INFO] [1742748507.071200521] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1742748507.071520194] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-1] [INFO] [1742748507.092897105] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[rviz2-6] [ERROR] [1742748508.442300989] [moveit_111772342.moveit.ros.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-6] [INFO] [1742748508.477030749] [moveit_111772342.moveit.ros.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-6] [INFO] [1742748508.569022439] [moveit_111772342.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[rviz2-6] [INFO] [1742748508.569218660] [moveit_111772342.moveit.core.robot_model]: Loading robot model 'abb_irb4600_60_205'...
+[rviz2-6] [WARN] [1742748508.600986142] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[rviz2-6] [INFO] [1742748508.601520948] [moveit_111772342.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'robot_arm': 1 1 1 1 1 1
+[rviz2-6] [INFO] [1742748508.709830488] [moveit_111772342.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[rviz2-6] [INFO] [1742748508.725836036] [moveit_111772342.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-6] [INFO] [1742748508.727134170] [moveit_111772342.moveit.ros.planning_scene_monitor]: Listening to '/monitored_planning_scene'
 [gazebo-1] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
 [gazebo-1] [1;36m[Dbg] [Physics.cc:871] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
@@ -232,7 +240,6 @@
 [gazebo-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::TriggeredPublisher[0m[1;36m] for entity [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [TriggeredPublisher.cc:689] [0m[1;36mTriggeredPublisher subscribed on /keyboard/keypress and publishing on /model/conveyor_2/link/base_link/track_cmd_vel, [0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::TriggeredPublisher[0m[1;36m] for entity [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
-[rviz2-6] [INFO] [1742568312.713563666] [my_ns.moveit_830033930.moveit.ros.motion_planning_frame]: MoveGroup namespace changed: /my_ns -> . Reloading params.
 [gazebo-1] [1;36m[Dbg] [TriggeredPublisher.cc:689] [0m[1;36mTriggeredPublisher subscribed on /keyboard/keypress and publishing on /model/conveyor_2/link/base_link/track_cmd_vel, [0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::TriggeredPublisher[0m[1;36m] for entity [[0m[1;36m70[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [TrackController.cc:265] [0m[1;36mSubscribed to [0m[1;36m/model/conveyor_3/link/base_link/track_cmd_vel[0m[1;36m for receiving track velocity [0m[1;36mcommands.[0m[1;36m[0m
@@ -256,10 +263,9 @@
 [gazebo-1] [1;36m[Dbg] [TriggeredPublisher.cc:689] [0m[1;36mTriggeredPublisher subscribed on /keyboard/keypress and publishing on /model/conveyor_4/link/base_link/track_cmd_vel, [0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::TriggeredPublisher[0m[1;36m] for entity [[0m[1;36m86[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:137] [0m[1;36mDetach topic is: [0m[1;36m/box_1/place[0m[1;36m[0m
-[rviz2-6] [INFO] [1742568312.805611782] [my_ns.moveit_830033930.moveit.ros.rdf_loader]: Loaded robot model in 0.00687046 seconds
-[rviz2-6] [INFO] [1742568312.805776350] [my_ns.moveit_830033930.moveit.core.robot_model]: Loading robot model 'abb_irb4600_60_205'...
-[rviz2-6] [WARN] [1742568312.828316594] [my_ns.moveit_830033930.moveit.ros.robot_model_loader]: No kinematics plugins defined. Fill and load kinematics.yaml!
-[gazebo-1] [WARN] [1742568312.844663288] [my_ns.gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[rviz2-6] [INFO] [1742748508.953708457] [interactive_marker_display_101505981022048]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-6] [WARN] [1742748508.957727843] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[gazebo-1] [WARN] [1742748508.962829070] [gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
 [gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:143] [0m[1;36mDetachableJoint subscribing to messages on [0m[1;36m[[0m[1;36m/box_1/place[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:160] [0m[1;36mAttach topic is: [0m[1;36m/box_1/pick[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:195] [0m[1;36mOutput topic is: [0m[1;36m/box_1/state[0m[1;36m[0m
@@ -291,8 +297,15 @@
 [gazebo-1] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m5[0m[1;36m)[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m6[0m[1;36m)[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m7[0m[1;36m)[0m[1;36m[0m
-[gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:259] [0m[1;36mAttaching entity: [0m[1;36m104[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:259] [0m[1;36mAttaching entity: [0m[1;36m105[0m[1;36m[0m
+[rviz2-6] [INFO] [1742748508.968100696] [moveit_111772342.moveit.ros.motion_planning_frame]: group robot_arm
+[rviz2-6] [INFO] [1742748508.968186504] [moveit_111772342.moveit.ros.motion_planning_frame]: Constructing new MoveGroup connection for group 'robot_arm' in namespace ''
+[rviz2-6] [INFO] [1742748508.982933262] [interactive_marker_display_101505981022048]: Sending request for interactive markers
+[rviz2-6] [INFO] [1742748509.013144211] [moveit_111772342.moveit.ros.move_group_interface]: Ready to take commands for planning group robot_arm.
+[rviz2-6] [INFO] [1742748509.015336811] [moveit_111772342.moveit.ros.motion_planning_frame]: group robot_arm
+[rviz2-6] [INFO] [1742748509.016314295] [interactive_marker_display_101505981022048]: Service response received for initialization
+[gazebo-1] [1;33m[Wrn] [EntityManagementFeatures.cc:469] [0m[1;33mNo joint named [[0m[1;33mplatform_to_manipulator[0m[1;33m] for modelID [[0m[1;33m1[0m[1;33m][0m
+[gazebo-1] [1;36m[Dbg] [DetachableJoint.cc:259] [0m[1;36mAttaching entity: [0m[1;36m106[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
 [gazebo-1] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_link_fixed_joint_lump__collision_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
 [gazebo-1] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
@@ -307,8 +320,8 @@
 [gazebo-1] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mlink_5_fixed_joint_lump__collision_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
 [gazebo-1] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
 [gazebo-1] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mlink_6_fixed_joint_lump__collision_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-1] [1;36m[Dbg] [Physics.cc:1911] [0m[1;36mCreating detachable joint [[0m[1;36m104[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [Physics.cc:1911] [0m[1;36mCreating detachable joint [[0m[1;36m105[0m[1;36m][0m[1;36m[0m
+[gazebo-1] [1;36m[Dbg] [Physics.cc:1911] [0m[1;36mCreating detachable joint [[0m[1;36m106[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;32m[Msg] [0m[1;32mEnabled contact surface customization for world entity [[0m[1;32m1[0m[1;32m][0m[1;32m[0m
 [gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact surface customization for collision [[0m[1;32mmain_collision[0m[1;32m][0m[1;32m[0m
 [gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact surface customization for collision [[0m[1;32mcollision_1[0m[1;32m][0m[1;32m[0m
@@ -325,12 +338,12 @@
 [gazebo-1] [1;33m[Wrn] [Physics.cc:2311] [0m[1;33mFound both JointVelocityReset and [0m[1;33mJointVelocityCmd components for Joint [[0m[1;33mjoint_4[0m[1;33m(Entity=[0m[1;33m35[0m[1;33m]). Ignoring JointVelocityCmd component.[0m[1;33m[0m
 [gazebo-1] [1;33m[Wrn] [Physics.cc:2311] [0m[1;33mFound both JointVelocityReset and [0m[1;33mJointVelocityCmd components for Joint [[0m[1;33mjoint_5[0m[1;33m(Entity=[0m[1;33m36[0m[1;33m]). Ignoring JointVelocityCmd component.[0m[1;33m[0m
 [gazebo-1] [1;33m[Wrn] [Physics.cc:2311] [0m[1;33mFound both JointVelocityReset and [0m[1;33mJointVelocityCmd components for Joint [[0m[1;33mjoint_6[0m[1;33m(Entity=[0m[1;33m37[0m[1;33m]). Ignoring JointVelocityCmd component.[0m[1;33m[0m
-[rviz2-6] [INFO] [1742568312.945387635] [my_ns.moveit_830033930.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
-[rviz2-6] [INFO] [1742568312.946996138] [my_ns.moveit_830033930.moveit.ros.planning_scene_monitor]: Listening to '/my_ns/monitored_planning_scene'
-[gazebo-1] [1;33m[Wrn] [Model.hh:69] [0m[1;33m[Wrn] [Model.hh:69] [Wrn] [Model.hh:69] [0m[1;33mSkipping serialization / deserialization for models [0m[1;33mwith //pose/@relative_to attribute.[0m[1;33m[0m
-[gazebo-1] [1;33mSkipping serialization / deserialization for models [0m[1;33mwith //pose/@relative_to attribute.[0m[1;33m[0m
-[gazebo-1] [1;33m[Wrn] [Component.hh:144] [0m[1;33mTrying to serialize component with data type [[0m[1;33mN3sdf3v145WorldE[0m[1;33m], which doesn't have [0m[1;33m`operator<<`. Component will not be serialized.[0m[1;33m[0m
-[spawner-3] [INFO] [1742568313.101047440] [my_ns.spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[gazebo-1] [1;33m[Wrn] [Model.hh:69] [0m[1;33m[Wrn] [Model.hh:69] Skipping serialization / deserialization for models [0m[1;33m[Wrn] [Model.hh:69] Skipping serialization / deserialization for models [0m[1;33mSkipping serialization / deserialization for models [Wrn] [Model.hh:69] [0m[1;33mSkipping serialization / deserialization for models [Wrn] [Component.hh:144] [0m[1;33mSkipping serialization / deserialization for models [0m[1;33mwith //pose/@relative_to attribute.with //pose/@relative_to attribute.[0m[1;33m[0m
+[gazebo-1] [1;33mwith //pose/@relative_to attribute.[0m[1;33mTrying to serialize component with data type [[0m[1;33mN3sdf3v145WorldE[0m[1;33m[0m
+[gazebo-1] [1;33m], which doesn't have [0m[1;33m`operator<<`. Component will not be serialized.[0m[1;33m[0m
+[gazebo-1] [1;33mSkipping serialization / deserialization for models [0m[1;33mSkipping serialization / deserialization for models [0m[1;33mwith //pose/@relative_to attribute.with //pose/@relative_to attribute.[0m[1;33m[0m
+[gazebo-1] [1;33m[0m
+[spawner-3] [INFO] [1742748509.196408964] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:52:3: QML RenderWindowOverlay: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:67:3: QML EntityContextMenu: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:52:3: QML RenderWindowOverlay: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
@@ -343,16 +356,8 @@
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:67:3: QML EntityContextMenu: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:52:3: QML RenderWindowOverlay: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:67:3: QML EntityContextMenu: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
-[rviz2-6] [INFO] [1742568313.219013033] [my_ns.interactive_marker_display_98780323208384]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
-[rviz2-6] [INFO] [1742568313.223075585] [my_ns.moveit_830033930.moveit.ros.robot_interaction]: No active joints or end effectors found for group 'robot_arm'. Make sure that kinematics.yaml is loaded in this node's namespace.
-[rviz2-6] [WARN] [1742568313.224604822] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
-[rviz2-6] [INFO] [1742568313.224984076] [my_ns.moveit_830033930.moveit.ros.robot_interaction]: No active joints or end effectors found for group 'robot_arm'. Make sure that kinematics.yaml is loaded in this node's namespace.
-[rviz2-6] [INFO] [1742568313.235546520] [my_ns.moveit_830033930.moveit.ros.motion_planning_frame]: group robot_arm
-[rviz2-6] [INFO] [1742568313.235636234] [my_ns.moveit_830033930.moveit.ros.motion_planning_frame]: Constructing new MoveGroup connection for group 'robot_arm' in namespace ''
-[rviz2-6] [INFO] [1742568313.256327558] [my_ns.interactive_marker_display_98780323208384]: Sending request for interactive markers
-[rviz2-6] [INFO] [1742568313.289487451] [my_ns.interactive_marker_display_98780323208384]: Service response received for initialization
-[INFO] [spawner-3]: process has finished cleanly [pid 19376]
-[INFO] [spawner-7]: process started with pid [19652]
+[INFO] [spawner-3]: process has finished cleanly [pid 14207]
+[INFO] [spawner-7]: process started with pid [14490]
 [gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact [1;32m[Msg] [0m[1;32mGazebo Sim GUI    v[0m[1;32m8.8.0[0m[1;32m[0m
 [gazebo-1] [1;36m[Dbg] [Gui.cc:275] [0m[1;36mWaiting for subscribers to [[0m[1;36m/gazebo/starting_world[0m[1;36m]...[0m[1;36m[0m
 [gazebo-1] [1;36m[Dbg] [Application.cc:96] [0m[1;36mInitializing application.[0m[1;36m[0m
@@ -360,8 +365,8 @@
 [gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:657] [0m[1;36mCreate main window[0m[1;36m[0m
 [gazebo-1] [1;36m[GUI] [Dbg] [PathManager.cc:68] [0m[1;36mRequesting resource paths through [[0m[1;36m/gazebo/resource_paths/get[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;36m[GUI] [Dbg] [Gui.cc:355] [0m[1;36mGUI requesting list of world names. The server may be busy [0m[1;36mdownloading resources. Please be patient.[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [PathManager.cc:57] [0m[1;36mReceived resource paths.[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [Gui.cc:413] [0m[1;36mRequesting GUI from [[0m[1;36m/world/warehosue/gui/info[0m[1;36m]...[0m[1;36m[0m
+[gazebo-1] [1;36m[GUI] [Dbg] [Gui.cc:413] [0m[1;36mRequesting GUI from [[GUI] [Dbg] [PathManager.cc:57] [0m[1;36mRequesting GUI from [[0m[1;36m/world/warehosue/gui/info[0m[1;36m]...[0m[1;36m[0m
+[gazebo-1] [1;36mReceived resource paths.[0m[1;36m[0m
 [gazebo-1] [1;36m[GUI] [Dbg] [GuiRunner.cc:149] [0m[1;36mRequesting initial state from [[0m[1;36m/world/warehosue/state[0m[1;36m]...[0m[1;36m[0m
 [gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoading config [[0m[1;32m/home/yjy/.gz/sim/8/gui.config[0m[1;32m][0m[1;32m[0m
 [gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mMinimalScene[0m[1;36m][0m[1;36m[0m
@@ -415,24 +420,25 @@
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
-[spawner-7] [INFO] [1742568314.448658700] [my_ns.spawner_joint_trajectory_controller]: [96mSetting controller param "params_file" to "['/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/config/abb_irb4600_60_205.yaml']" for [1mjoint_trajectory_controller[0m
-[gazebo-1] [INFO] [1742568314.458329950] [my_ns.controller_manager]: Loading controller : 'joint_trajectory_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
-[gazebo-1] [INFO] [1742568314.458421018] [my_ns.controller_manager]: Loading controller 'joint_trajectory_controller'
-[gazebo-1] [INFO] [1742568314.467847189] [my_ns.controller_manager]: Controller 'joint_trajectory_controller' node arguments: --ros-args --params-file /home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml --params-file /home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/config/abb_irb4600_60_205.yaml --param use_sim_time:=true 
-[spawner-7] [INFO] [1742568314.521635306] [my_ns.spawner_joint_trajectory_controller]: [94mLoaded [1mjoint_trajectory_controller[0m
-[gazebo-1] [INFO] [1742568314.524753300] [my_ns.controller_manager]: Configuring controller: 'joint_trajectory_controller'
-[gazebo-1] [INFO] [1742568314.525182348] [my_ns.joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
-[gazebo-1] [INFO] [1742568314.525240670] [my_ns.joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
-[gazebo-1] [INFO] [1742568314.525313101] [my_ns.joint_trajectory_controller]: Using 'splines' interpolation method.
-[gazebo-1] [INFO] [1742568314.533433497] [my_ns.joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
-[gazebo-1] [INFO] [1742568314.565207241] [my_ns.controller_manager]: Activating controllers: [ joint_trajectory_controller ]
+[gazebo-1] [1;32m[surface customization for collision [[0m[1;32mmain_collision[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact surface customization for collision [[0m[1;32mcollision_1[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact surface customization for collision [[0m[1;32mcollision_2[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/warehosue/scene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/warehosue/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/warehosue/state[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-1] [1;36m[Dbg] [EntityComponentManager.cc:1656] [0m[1;36mUpdated state thread iterators: [0m[1;36m12[0m[1;36m threads processing around [0m[1;36m9[0m[1;36m entities each.[0m[1;36m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/ComponentInspector/ComponentInspector.qml:251:3: QML Dialog: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
-[spawner-7] [INFO] [1742568314.644903315] [my_ns.spawner_joint_trajectory_controller]: [92mConfigured and activated [1mjoint_trajectory_controller[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityTree/EntityTree.qml:148:7: QML ToolButton: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mWorld control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-1] GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mWorld control[0m[1;32m] to main window[0m[1;32m[0m
 [gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mWorldControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libWorldControl.so[0m[1;32m][0m[1;32m[0m
 [gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mWorldStats[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/warehosue/stats[0m[1;32m][0m[1;32m[0m
@@ -459,118 +465,21 @@
 [gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mComponentInspector[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libComponentInspector.so[0m[1;32m][0m[1;32m[0m
 [gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mEntityTree[0m[1;36m][0m[1;36m[0m
 [gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCurrently tracking topic on [[0m[1;32m/gui/currently_tracked[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mEntity tree[0m[1;32m] to main window[0m[1;32m[0m
-[INFO] [spawner-7]: process has finished cleanly [pid 19652]
-[gazebo-1] [1;32m[GUI] [0m[1surface customization for collision [[0m[1;32mmain_collision[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact surface customization for collision [[0m[1;32mcollision_1[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mEnabling contact surface customization for collision [[0m[1;32mcollision_2[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/warehosue/scene/info[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/warehosue/scene/deletion[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/warehosue/state[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/warehosue[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;36m[Dbg] [EntityComponentManager.cc:1656] [0m[1;36mUpdated state thread iterators: [0m[1;36m12[0m[1;36m threads processing around [0m[1;36m9[0m[1;36m entities each.[0m[1;36m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Component.hh:189] [0m[1;33mTrying to deserialize component with data type [[0m[1;33mN3sdf3v145WorldE[0m[1;33m], which doesn't have [0m[1;33m`operator>>`. Component will not be deserialized.[0m[1;33m[0m
+[spawner-7] [INFO] [1742748511.347189198] [spawner_joint_trajectory_controller]: [96mSetting controller param "params_file" to "['/home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/config/abb_irb4600_60_205.yaml']" for [1mjoint_trajectory_controller[0m
+[gazebo-1] [INFO] [1742748511.360087933] [controller_manager]: Loading controller : 'joint_trajectory_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[gazebo-1] [INFO] [1742748511.360211369] [controller_manager]: Loading controller 'joint_trajectory_controller'
+[gazebo-1] [INFO] [1742748511.370810192] [controller_manager]: Controller 'joint_trajectory_controller' node arguments: --ros-args --params-file /home/yjy/astar_proj/ros2_simulation/src/warehouse_manage/config/abb_irb4600_60_205.yaml --params-file /home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/config/abb_irb4600_60_205.yaml --param use_sim_time:=true 
+[spawner-7] [INFO] [1742748511.429515729] [spawner_joint_trajectory_controller]: [94mLoaded [1mjoint_trajectory_controller[0m
+[gazebo-1] [INFO] [1742748511.432965615] [controller_manager]: Configuring controller: 'joint_trajectory_controller'
+[gazebo-1] [INFO] [1742748511.433484681] [joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-1] [INFO] [1742748511.433592266] [joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-1] [INFO] [1742748511.433670987] [joint_trajectory_controller]: Using 'splines' interpolation method.
+[gazebo-1] [INFO] [1742748511.440384170] [joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityTree/EntityTree.qml:148:7: QML ToolButton: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
+[gazebo-1] [INFO] [1742748511.469041422] [controller_manager]: Activating controllers: [ joint_trajectory_controller ]
+[spawner-7] [INFO] [1742748511.502209616] [spawner_joint_trajectory_controller]: [92mConfigured and activated [1mjoint_trajectory_controller[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:52:3: QML RenderWindowOverlay: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
 [gazebo-1] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/EntityContextMenuPlugin/EntityContextMenuPlugin.qml:67:3: QML EntityContextMenu: Detected anchors on an item that is managed by a layout. This is undefined behavior; use Layout.alignment instead.[0m[1;33m[0m
-[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-[rviz2-6] [INFO] [1742568333.115554669] [rclcpp]: signal_handler(signum=2)
-[move_group-5] [INFO] [1742568333.115556289] [rclcpp]: signal_handler(signum=2)
-[robot_state_publisher-2] [INFO] [1742568333.115559076] [rclcpp]: signal_handler(signum=2)
-[parameter_bridge-4] [INFO] [1742568333.115589471] [rclcpp]: signal_handler(signum=2)
-[rviz2-6] [ERROR] [1742568333.126708313] [my_ns.rviz.rclcpp_action]: Error in destruction of rcl action client handle: action client implementation is invalid, at ./src/rcl_action/action_client.c:491
-[rviz2-6] [WARN] [1742568333.131487164] [my_ns.interactive_marker_display_98780323208384]: Server not available while running, resetting
-[rviz2-6] terminate called without an active exception
-[move_group-5] [INFO] [1742568333.179715276] [my_ns.moveit.moveit.ros.moveit_cpp]: Deleting MoveItCpp
-[move_group-5] Stack trace (most recent call last):
-[move_group-5] #15   Object "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", at 0xffffffffffffffff, in 
-[move_group-5] #14   Object "/opt/ros/jazzy/lib/moveit_ros_move_group/move_group", at 0x6272fdc16a44, in _start
-[INFO] [parameter_bridge-4]: process has finished cleanly [pid 19378]
-[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 19375]
-[move_group-5] #13   Source "../csu/libc-start.c", line 360, in __libc_start_main_impl [0x72cce822a28a]
-[move_group-5] #12   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x72cce822a1c9]
-[move_group-5] #11   Object "/opt/ros/jazzy/lib/moveit_ros_move_group/move_group", at 0x6272fdc15539, in main
-[move_group-5] #10   Object "/opt/ros/jazzy/lib/moveit_ros_move_group/move_group", at 0x6272fdc18159, in 
-[move_group-5] #9    Object "/opt/ros/jazzy/lib/libmoveit_cpp.so.2.12.1", at 0x72cce907bd60, in moveit_cpp::MoveItCpp::~MoveItCpp()
-[move_group-5] #8    Object "/opt/ros/jazzy/lib/libmoveit_cpp.so.2.12.1", at 0x72cce907baf9, in 
-[gazebo-1] ;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mEntityTree[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libEntityTree.so[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:398] [0m[1;36mLoading window config[0m[1;36m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mUsing server control service [[0m[1;32m/server_control[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:671] [0m[1;36mApplying config[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MinimalScene.cc:986] [0m[1;36mCreating render thread interface for OpenGL[0m[1;36m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MinimalScene.cc:749] [0m[1;36mCreate scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MinimalScene.cc:1037] [0m[1;36mCreating texture node render interface for OpenGL[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [TransformControl.cc:453] [0m[1;36mTransformControl plugin is using camera [[0m[1;36mscene::Camera(65527)[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [Spawn.cc:308] [0m[1;36mSpawn plugin is using camera [[0m[1;36mscene::Camera(65527)[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [SelectEntities.cc:452] [0m[1;36mSelectEntities plugin is using camera [[0m[1;36mscene::Camera(65527)[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MarkerManager.cc:169] [0m[1;36mAdvertise [0m[1;36m/marker[0m[1;36m/list service.[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MarkerManager.cc:179] [0m[1;36mAdvertise [0m[1;36m/marker[0m[1;36m/list.[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MarkerManager.cc:189] [0m[1;36mAdvertise [0m[1;36m/marker[0m[1;36m_array.[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [CameraTracking.cc:205] [0m[1;36mCameraTrackingPrivate plugin is moving camera [[0m[1;36mscene::Camera(65527)[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mMove to service on [[0m[1;32m/gui/move_to[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mFollow service on [[0m[1;32m/gui/follow[0m[1;32m] (deprecated)[0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mTracking topic on [[0m[1;32m/gui/track[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mTracking status topic on [[0m[1;32m/gui/currently_tracked[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mMove to pose service on [[0m[1;32m/gui/move_to/pose[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera pose topic advertised on [[0m[1;32m/gui/camera/pose[0m[1;32m][0m[1;32m[0m
-[gazebo-1] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mFollow offset service on [[0m[1;32m/gui/follow/offset[0m[1;32m] (deprecated)[0m[1;32m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [InteractiveViewControl.cc:176] [0m[1;36mInteractiveViewControl plugin is moving camera [[0m[1;36mscene::Camera(65527)[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [EntityContextMenuPlugin.cc:79] [0m[1;36mEntity context menu plugin is using camera [[0m[1;36mscene::Camera(65527)[0m[1;36m][0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [SignalHandler.cc:142] [0m[1;36mReceived signal[[0m[1;36m2[0m[1;36m].[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [Gui.cc:535] [0m[1;36mShutting down gz-sim-gui[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [Application.cc:237] [0m[1;36mTerminating application.[0m[1;36m[0m
-[gazebo-1] [1;36m[GUI] [Dbg] [MinimalScene.cc:841] [0m[1;36mDestroy scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
-[gazebo-1] Stack trace (most recent call last):
-[gazebo-1] #31   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x794919857b39, in rb_vm_exec
-[gazebo-1] #30   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x7949198545db, in 
-[gazebo-1] #29   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x7949198500fe, in 
-[gazebo-1] #28   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x79491984d8ef, in 
-[gazebo-1] #27   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x79491978e099, in 
-[gazebo-1] #26   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x7949196b7216, in rb_protect
-[gazebo-1] #25   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x79491985c2c9, in rb_yield
-[gazebo-1] #24   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x794919857b39, in rb_vm_exec
-[gazebo-1] #23   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x7949198545db, in 
-[gazebo-1] #22   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x7949198500fe, in 
-[gazebo-1] #21   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x79491984d8ef, in 
-[gazebo-1] #20   Object "/usr/lib/x86_64-linux-gnu/ruby/3.2.0/fiddle.so", at 0x7949191d7b13, in 
-[gazebo-1] #19   Object "/lib/x86_64-linux-gnu/libruby-3.2.so.3.2", at 0x7949198163bb, in rb_nogvl
-[gazebo-1] #18   Object "/usr/lib/x86_64-linux-gnu/ruby/3.2.0/fiddle.so", at 0x7949191d743b, in 
-[gazebo-1] #17   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x794918b9a0bd, in ffi_call
-[gazebo-1] #16   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x794918b973ee, in 
-[gazebo-1] #15   Object "/lib/x86_64-linux-gnu/libffi.so.8", at 0x794918b9ab15, in 
-[gazebo-1] #14   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8-gz.so.8.8.0", at 0x7949139d4917, in runServer
-[gazebo-1] #13   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x79491333a82c, in gz::sim::v8::Server::~Server()
-[gazebo-1] #12   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x794913349654, in 
-[gazebo-1] #11   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x79491334cac7, in gz::sim::v8::SimulationRunner::~SimulationRunner()
-[gazebo-1] #10   Object "/opt/ros/jazzy/opt/gz_sim_vendor/lib/libgz-sim8.so.8", at 0x79491335961c, in 
-[gazebo-1] #9    Object "/opt/ros/jazzy/opt/gz_plugin_vendor/lib/libgz-plugin2.so.2", at 0x794914493644, in gz::plugin::Plugin::~Plugin()
-[gazebo-1] #8    Object "/opt/ros/jazzy/opt/gz_plugin_vendor/lib/libgz-plugin2.so.2", at 0x794914492b35, in 
-[gazebo-1] #7    Object "/opt/ros/jazzy/lib/libgz_ros2_control-system.so", at 0x7948e583e4ff, in std::_Function_handler<void (void*), gz::plugin::detail::MakeInfo<gz_ros2_control::GazeboSimROS2ControlPlugin, gz::sim::v8::System, gz::sim::v8::ISystemConfigure, gz::sim::v8::ISystemPreUpdate, gz::sim::v8::ISystemPostUpdate>()::{lambda(void*)#1}>::_M_invoke(std::_Any_data const&, void*&&)
-[gazebo-1] #6    Object "/opt/ros/jazzy/lib/libgz_ros2_control-system.so", at 0x7948e582cce7, in gz_ros2_control::GazeboSimROS2ControlPlugin::~GazeboSimROS2ControlPlugin()
-[gazebo-1] #5    Object "/opt/ros/jazzy/lib/libgz_ros2_control-system.so", at 0x7948e58320b5, in 
-[gazebo-1] #4    Object "/opt/ros/jazzy/lib/libcontroller_manager.so", at 0x7948e5732054, in controller_manager::ControllerManager::~ControllerManager()
-[gazebo-1] #3    Object "/opt/ros/jazzy/lib/libcontroller_manager.so", at 0x7948e5731e6a, in controller_manager::ControllerManager::~ControllerManager()
-[gazebo-1] #2    Object "/opt/ros/jazzy/lib/libgz_ros2_control-system.so", at 0x7948e5836a5b, in 
-[gazebo-1] #1    Object "/opt/ros/jazzy/lib/libhardware_interface.so", at 0x7948e5643b3e, in hardware_interface::ResourceManager::~ResourceManager()
-[gazebo-1] #0    Object "/opt/ros/jazzy/lib/libhardware_interface.so", at 0x7948e566980d, in 
-[gazebo-1] Segmentation fault (Address not mapped to object [0x7948dc552280])
-[move_group-5] #7    Object "/opt/ros/jazzy/lib/libmoveit_trajectory_execution_manager.so.2.12.1", at 0x72cce859124a, in trajectory_execution_manager::TrajectoryExecutionManager::~TrajectoryExecutionManager()
-[move_group-5] #6    Object "/opt/ros/jazzy/lib/libmoveit_trajectory_execution_manager.so.2.12.1", at 0x72cce85a3b05, in 
-[move_group-5] #5    Object "/opt/ros/jazzy/lib/librclcpp.so", at 0x72cce8b339c4, in rclcpp::Node::~Node()
-[move_group-5] #4    Object "/opt/ros/jazzy/lib/librclcpp.so", at 0x72cce8aeff05, in 
-[move_group-5] #3    Object "/opt/ros/jazzy/lib/librclcpp.so", at 0x72cce8b31c80, in 
-[move_group-5] #2    Object "/opt/ros/jazzy/lib/librclcpp.so", at 0x72cce8b31bc3, in rclcpp::node_interfaces::NodeBase::~NodeBase()
-[move_group-5] #1    Object "/opt/ros/jazzy/lib/librclcpp.so", at 0x72cce8aeffc9, in 
-[move_group-5] #0    Object "/opt/ros/jazzy/lib/librclcpp.so", at 0x72cce8af4f79, in rclcpp::CallbackGroup::~CallbackGroup()
-[move_group-5] Segmentation fault (Address not mapped to object [0x72cc941606e8])
-[ERROR] [rviz2-6]: process has died [pid 19380, exit code -6, cmd '/opt/ros/jazzy/lib/rviz2/rviz2 -d /home/yjy/astar_proj/ros2_simulation/install/abb_irb4600_60_205_moveit_config/share/abb_irb4600_60_205_moveit_config/config/moveit.rviz --ros-args -r __ns:=/my_ns --params-file /tmp/launch_params_rk1kah6o --params-file /tmp/launch_params_f4_xonrt'].
-[ERROR] [gazebo-1]: process has died [pid 19374, exit code -2, cmd 'ruby $(which gz) sim  -r -v 4 /home/yjy/astar_proj/ros2_simulation/install/warehouse_manage/share/warehouse_manage/worlds/warehouse.sdf --force-version 8'].
-[ERROR] [move_group-5]: process has died [pid 19379, exit code -11, cmd '/opt/ros/jazzy/lib/moveit_ros_move_group/move_group --ros-args -r __ns:=/my_ns --params-file /tmp/launch_params_2jcjvskc'].
+[INFO] [spawner-7]: process has finished cleanly [pid 14490]
